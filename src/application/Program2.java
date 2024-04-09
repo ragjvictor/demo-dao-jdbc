@@ -21,6 +21,11 @@ public class Program2 {
 		for (Department dep : list) {
 			System.out.println(dep);
 		}
+		
+		System.out.println("\n=== TEST 3: department insert ===");
+		Department newDepartment = new Department(null, "Foods");
+		departmentDao.insert(newDepartment);
+		System.out.println("\nInserted! New id = " + newDepartment.getId());
 
 	}
 
